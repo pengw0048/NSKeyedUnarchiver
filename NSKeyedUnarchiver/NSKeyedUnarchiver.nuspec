@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Peng Wang</authors>
+    <owners>Peng Wang</owners>
+    <projectUrl>https://github.com/tiancaihb/NSKeyedUnarchiver</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Read NSKeyedArchiver.</description>
+    <releaseNotes>Initial commit.</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>NSKeyedUnarchiver plist</tags>
+  </metadata>
+</package>
