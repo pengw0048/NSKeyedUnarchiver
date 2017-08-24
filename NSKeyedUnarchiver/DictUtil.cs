@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace NSKeyedUnarchiver
 {
@@ -22,11 +23,11 @@ namespace NSKeyedUnarchiver
                 if (objDict.ContainsKey(key))
                 {
                     var target = objDict[key];
-                    if (typeof(T).IsAssignableFrom(target.GetType()))
-                    {
-                        value = (T)target;
+                    try {
+                        value = (T)Convert.ChangeType(target, typeof(T));
                         return true;
                     }
+                    catch (Exception) { }
                 }
             }
             value = default(T);
