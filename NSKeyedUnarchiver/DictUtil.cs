@@ -22,7 +22,7 @@ namespace NSKeyedUnarchiver
                 if (objDict.ContainsKey(key))
                 {
                     var target = objDict[key];
-                    if (target.GetType().Equals(typeof(T)))
+                    if (typeof(T).IsAssignableFrom(target.GetType()))
                     {
                         value = (T)target;
                         return true;
@@ -40,7 +40,7 @@ namespace NSKeyedUnarchiver
 
         public static bool TryGetSubclass(object obj, string key, out Dictionary<string, object> value)
         {
-            return TryGet<Dictionary<string, object>>(obj, key, out value);
+            return TryGet(obj, key, out value);
         }
 
         public static bool TryGetInArray<T>(object obj, string key, int index, out T value)
