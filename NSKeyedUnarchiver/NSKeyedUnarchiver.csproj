@@ -43,10 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DictUtil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Unarchiver.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="NSKeyedUnarchiver.nuspec" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

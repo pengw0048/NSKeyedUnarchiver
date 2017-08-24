@@ -2,14 +2,14 @@
 <package >
   <metadata>
     <id>$id$</id>
-    <version>$version$</version>
+    <version>1.1.0</version>
     <title>$title$</title>
     <authors>Peng Wang</authors>
     <owners>Peng Wang</owners>
     <projectUrl>https://github.com/tiancaihb/NSKeyedUnarchiver</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Read NSKeyedArchiver.</description>
-    <releaseNotes>Initial commit.</releaseNotes>
+    <description>Read NSKeyedArchiver generated plists.</description>
+    <releaseNotes>Add a helper class to read from DeepParse results.</releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>NSKeyedUnarchiver plist</tags>
   </metadata>
